@@ -11,7 +11,7 @@ public interface SchboopConfig extends Config
 	@ConfigItem(
 			keyName = "masterVolume",
 			name = "Master Volume",
-			description = "Sets the master volume of all ground item sounds",
+			description = "Set the master volume of all sounds.",
 			position = 0
 	)
 	default int masterVolume()
@@ -22,7 +22,7 @@ public interface SchboopConfig extends Config
 	@ConfigItem(
 			keyName = "Pops_Died",
 			name = "'What happened?' on death",
-			description = "Configure whether or not Pops should say 'what happened?' when you die.",
+			description = "Should Pops should ask 'what happened?' when you die?",
 			position = 1
 	)
 	default boolean Pops_Died()
@@ -33,7 +33,7 @@ public interface SchboopConfig extends Config
 	@ConfigItem(
 			keyName = "lowHP",
 			name = "Low HP Warnings",
-			description = "Configure whether or not Schboop reminds you to drink a yellow when you health is low.",
+			description = "Should Schboop remind you to drink a yellow when you health is low?",
 			position = 2
 	)
 	default boolean lowHP()
@@ -44,7 +44,7 @@ public interface SchboopConfig extends Config
 	@ConfigItem(
 			keyName = "lowpray",
 			name = "Low Prayer Warning",
-			description = "Configure whether or not Schboop reminds you to drink a pink at 20% prayer.",
+			description = "Should Schboop remind you to drink a pink at 40% prayer?",
 			position = 3
 	)
 	default boolean lowpray()
@@ -55,7 +55,7 @@ public interface SchboopConfig extends Config
 	@ConfigItem(
 			keyName = "achievement",
 			name = "Achievement Reactions",
-			description = "Configure whether or not Pops makes fun of your achievements.",
+			description = "Should Pops makes fun of your achievements?",
 			position = 4
 	)
 	default boolean achievement()
@@ -66,7 +66,7 @@ public interface SchboopConfig extends Config
 	@ConfigItem(
 			keyName = "roast",
 			name = "Roast Mode",
-			description = "Configure whether or not Pops makes fun of you in assorted circumstances.",
+			description = "Should Pops roast you for being stupid?",
 			position = 5
 	)
 	default boolean roast()
@@ -77,7 +77,7 @@ public interface SchboopConfig extends Config
 	@ConfigItem(
 			keyName = "Schboop_says_Moo",
 			name = "Moo Mode",
-			description = "Configure whether or not Schboop should moo in various cow-associated situations.",
+			description = "To moo or not to moo, that is the question.",
 			position = 6
 	)
 	default boolean Schboop_says_Moo()
@@ -93,18 +93,18 @@ public interface SchboopConfig extends Config
 	)
 	default boolean all_hail_prime()
 	{
-		return true;
+		return false;
 	}
 
 	@ConfigItem(
 			keyName = "BullySchbob",
-			name = "Mess with Schboop?",
-			description = "Secret functionality specifically to annoy Schboop that you should turn off. Good thing Schboop can't read.",
+			name = "Streamer Mode",
+			description = "Secret functionality to bully Schboop. Don't turn it on.",
 			position = 7
 	)
 	default boolean bullymode()
 	{
-		return true;
+		return false;
 	}
 
 }
